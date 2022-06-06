@@ -1,0 +1,110 @@
+* {
+	/* border: 1px solid red; */
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	max-width: 992px;
+	margin: 0 auto;
+	position: relative;
+	background: rgb(20, 19, 19);
+	background: linear-gradient(
+		90deg,
+		rgb(27, 26, 26) 0%,
+		rgba(23, 27, 31, 1) 36%,
+		rgba(42, 48, 54, 1) 56%,
+		rgba(51, 58, 65, 1) 81%,
+		rgba(61, 61, 61, 1) 100%
+	);
+}
+
+header {
+	background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+	background-image: linear-gradient(
+		65.9deg,
+		rgba(85, 228, 224, 1) 5.5%,
+		rgba(75, 68, 224, 0.74) 54.2%,
+		rgba(64, 198, 238, 1) 55.2%,
+		rgb(70, 36, 224) 98.4%
+	);
+	font-family: "Carter One", cursive, Helvetica;
+	color: whitesmoke;
+	text-shadow: 1px 1px 4px rgb(27, 26, 26);
+	border-radius: 10px;
+	padding: 1.5rem;
+	margin: 1rem;
+	font-size: 1.5rem;
+}
+
+.profile_photo {
+	border-radius: 10px;
+	position: absolute;
+	left: 71%;
+	top: 6%;
+	height: 420px;
+	max-width: 250px;
+	filter: drop-shadow(4px 4px 5px rgb(27, 26, 26));
+}
+
+.details {
+	font-family: "Philosopher", sans-serif;
+	margin: 1rem;
+	color: wheat;
+	padding-top: 1rem;
+}
+
+.title {
+	padding: 1rem;
+}
+
+.title h3 {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+
+.links_list {
+	padding: 1rem;
+	font-size: 1.2rem;
+}
+
+.links_list ul {
+	margin-left: 2.5rem;
+}
+
+.links_list li {
+	margin-bottom: 0.5rem;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	background-color: #74ebd5;
+	background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+	margin: 1rem;
+	padding: 1.5rem;
+	border-radius: 5px;
+	color: rgb(29, 43, 113);
+	font-size: 20px;
+	font-weight: 600;
+}
+
+footer a,
+#updated {
+	color: #ff3e55;
+}
+
+.contact_info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.5rem;
+	max-width: 35rem;
+}
