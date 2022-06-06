@@ -1,3 +1,5 @@
+let currentDate = new Date();
+
 try {
 	let options = {
 		weekday: "long",
@@ -6,10 +8,12 @@ try {
 		year: "numeric",
 	};
 
-	document.querySelector("#updated").textContent = ` Last Update: ${new Date().toLocaleDateString(
+	document.querySelector("#updated").textContent = ` Last Update: ${currentDate.toLocaleDateString(
 		"en-us",
 		options,
-	)} ${new Date().toLocaleTimeString("en-US")}`;
+	)} ${currentDate.toLocaleTimeString("en-US")}`;
 } catch (error) {
 	alert("Error displaying time udpate");
 }
+
+document.querySelector("#year").textContent = currentDate.getFullYear();
