@@ -89,6 +89,14 @@ header h1 {
 	margin-bottom: 0.5rem;
 }
 
+.links_list a {
+	color: rgb(237, 239, 109);
+}
+
+.links_list a:hover {
+	color: rgb(82, 170, 228);
+}
+
 footer {
 	display: flex;
 	flex-direction: column;
@@ -126,6 +134,7 @@ footer a {
 		position: initial;
 		margin-top: 1rem;
 		padding: 2rem;
+		padding-bottom: 0;
 	}
 
 	.profile_photo img {
@@ -154,5 +163,10 @@ footer a {
 @media screen and (max-width: 330px) {
 	header h1 {
 		font-size: 2rem;
+	}
+
+	.profile_photo img {
+		height: auto;
+		margin: 0 auto;
 	}
 }
