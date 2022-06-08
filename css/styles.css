@@ -205,9 +205,20 @@ img {
 }
 
 .design-header h2 {
-	color: var(--fifth-color);
+	color: var(--sixth-color);
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+}
+
+/* .design-nav {
+	padding: 1.5rem;
+} */
+
+.design-nav a {
+	color: var(--fifth-color);
+	font-size: 1.3rem;
+	float: right;
+	margin-right: 1.5rem;
 }
 
 .design-container {
