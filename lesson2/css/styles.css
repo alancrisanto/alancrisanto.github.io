@@ -158,3 +158,18 @@ h3 {
 .weather-plan-img {
 	padding: 0 2rem;
 }
+
+/* *************** TYPOGRAPHY ****************/
+
+.weather-plan-typography {
+	box-shadow: var(--box-shadow);
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.weather-plan-typography p {
+	color: var(--text-color);
+	font-size: 1.2rem;
+}
