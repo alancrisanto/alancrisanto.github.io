@@ -1,0 +1,109 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root {
+	--background-color: #4b6584;
+	--background-color-2: #778ca3;
+	--h1-color: #eee;
+	--h2-color: #0fb9b1;
+	--links-color: #4b7bec;
+	--font-family-primary: "Noto Sans", sans-serif;
+	--font-family-secondary: "Source Serif Pro", serif;
+}
+
+/* ********** HEADER ********** */
+
+.preston-header img {
+	width: 90px;
+	height: 90px;
+	/* align-self: center; */
+}
+
+.preston-header {
+	display: flex;
+	gap: 1rem;
+	background-color: var(--background-color);
+	color: var(--h1-color);
+	padding: 0.6rem;
+}
+
+.header-tile {
+	text-align: center;
+}
+
+.header-tile h1 {
+	color: var(--h1-color);
+	font-family: var(--font-family-primary);
+	margin: 0.5rem;
+}
+
+.header-tile h2 {
+	font-family: var(--font-family-secondary);
+	font-size: 1rem;
+	color: var(--h2-color);
+}
+
+/* ************* NAVIGATION ****************/
+
+nav {
+	background: var(--background-color-2);
+	/* padding: 0.5rem; */
+	font-family: var(--font-family-secondary);
+	margin: 0 auto;
+	max-width: 960px;
+	/* border: 1px solid red; */
+}
+
+.navigation {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.navigation li:first-child {
+	display: block;
+	font-size: 1.5rem;
+}
+
+.navigation li {
+	list-style: none;
+	/* padding: 0.5rem; */
+	display: none;
+}
+
+.navigation a {
+	color: white;
+	display: block;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: left;
+	padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.navigation a:hover {
+	color: var(--links-color);
+	background-color: var(--h2-color);
+}
+
+.ham::before {
+	content: url(/weather/images/ham-icon-4.png);
+	padding-right: 0.5rem;
+	padding-top: 10px;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "";
+}
