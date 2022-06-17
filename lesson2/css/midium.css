@@ -28,6 +28,16 @@
 	}
 }
 
+@media screen and (max-width: 672px) {
+	.weather-plan-wireframes {
+		flex-direction: column;
+	}
+
+	.weather-plan-wireframes img {
+		align-self: center;
+	}
+}
+
 @media screen and (max-width: 615px) {
 	.weather-plan-nav ul {
 		align-items: center;

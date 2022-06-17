@@ -8,12 +8,12 @@ try {
 		year: "numeric",
 	};
 
-	document.querySelector("#updated").textContent = `Last updated ${currentDate.toLocaleDateString(
+	document.querySelector("#updated").textContent = ` Last Update: ${currentDate.toLocaleDateString(
 		"en-us",
 		options,
-	)} ${currentDate.toLocaleDateString("en-us")} `;
+	)} ${currentDate.toLocaleTimeString("en-US")}`;
 } catch (error) {
-	alert("Error displaying time updated");
+	alert("Error displaying time udpate");
 }
 
-document.querySelector("year").textContent = currentDate.getFullYear();
+document.querySelector("#year").textContent = currentDate.getFullYear();

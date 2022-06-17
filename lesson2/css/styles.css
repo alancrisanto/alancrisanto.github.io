@@ -130,6 +130,37 @@ h3 {
 	color: var(--sixth-color);
 }
 
+/* ************** TARGET AUDIENCE ****************/
+.weather-plan-container {
+	max-width: 992px;
+	margin: 0 auto;
+}
+
+.weather-plan-target-1,
+.weather-plan-target-3 {
+	background-color: #eee;
+	padding: 1rem;
+}
+
+.weather-plan-target-1 p {
+	color: var(--text-color);
+	margin-left: 3rem;
+}
+
+.weather-plan-target-h2 {
+	font-size: 2rem;
+	padding: 0 2rem;
+}
+
+.weather-plan-target-ul li {
+	color: var(--text-color);
+	padding: 0.5rem;
+}
+
+.weather-plan-target-ul {
+	margin-left: 2rem;
+}
+
 /* ***************COLOR SCHEME ****************/
 
 .weather-plan-list {
@@ -172,4 +203,19 @@ h3 {
 .weather-plan-typography p {
 	color: var(--text-color);
 	font-size: 1.2rem;
+}
+
+/* ************* TYPOGRAPHY **************** */
+
+.weather-plan-wireframes {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.weather-plan-wireframes img {
+	width: 300px;
+	height: auto;
+	/* align-self: center; */
 }
