@@ -39,6 +39,14 @@
 }
 
 @media screen and (max-width: 615px) {
+	.cards {
+		display: block;
+	}
+
+	.card {
+		margin-bottom: 2rem;
+	}
+
 	.weather-plan-nav ul {
 		align-items: center;
 		flex-direction: column;

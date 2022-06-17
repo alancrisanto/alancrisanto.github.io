@@ -72,18 +72,24 @@ h3 {
 	color: var(--hover-color);
 }
 
+.weather-plan-home-main {
+	max-width: 992px;
+	margin: 0 auto;
+}
+
 .cards {
-	display: flex;
-	justify-content: center;
-	margin: 2rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
+	justify-content: center;
+	padding: 2rem;
 }
 
 .card {
 	border: 1px solid #ccc;
 	border-radius: 1rem;
 	color: var(--text-color);
-	width: 500px;
+	/* width: 500px; */
 	height: auto;
 	text-align: center;
 	box-shadow: var(--box-shadow);
