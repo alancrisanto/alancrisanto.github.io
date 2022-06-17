@@ -1,0 +1,131 @@
+/* Now let’s see some common breakpoints for widths of devices:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+:root {
+	--font-color: #cfe3f7;
+	--h1-color: #abe9e9;
+	--text-color: rgb(168, 164, 164);
+	--hover-color: #fcf300;
+	--dark-shadow: 1px 1px 4px rgb(27, 26, 26);
+	--box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	--first-color: hsl(224, 19%, 27%);
+	--second-color: hsl(256, 9%, 32%);
+	--third-color: hsl(240, 100%, 97%);
+	--fourth-color: hsl(205, 58%, 52%);
+	--fifth-color: hsl(12, 83%, 62%);
+	--sixth-color: hsl(39, 100%, 63%);
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	color: var(--fourth-color);
+}
+
+h3 {
+	color: var(--fifth-color);
+}
+
+.weather-plan {
+	background-image: url("https://res.cloudinary.com/deueg7n72/image/upload/v1655401442/BYU%20Idaho/bg-header_qoella.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 280px;
+}
+
+.weather-plan h1 {
+	color: var(--h1-color);
+	text-align: center;
+	font-size: 4rem;
+	/* text-shadow: 3px 2px 6px rgba(255, 255, 255, 0.55); */
+	text-shadow: var(--dark-shadow);
+}
+
+.weather-plan-nav ul {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 2.2rem 1rem;
+}
+
+.weather-plan-nav li {
+	list-style: none;
+	padding: 0 0.8rem;
+}
+
+.weather-plan-nav a {
+	color: var(--font-color);
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-shadow: var(--dark-shadow);
+}
+
+.weather-plan a:hover {
+	color: var(--hover-color);
+}
+
+.cards {
+	display: flex;
+	justify-content: center;
+	margin: 2rem auto;
+	gap: 1rem;
+}
+
+.card {
+	border: 1px solid #ccc;
+	border-radius: 1rem;
+	color: var(--text-color);
+	width: 500px;
+	height: auto;
+	text-align: center;
+	box-shadow: var(--box-shadow);
+	transition: 0.3s;
+}
+
+.card p {
+	font-size: 1.1rem;
+	padding: 1rem;
+}
+
+.description-card p {
+	text-align: justify;
+}
+
+.weather-plan-log {
+	width: 150px;
+	height: auto;
+}
+
+/* ************** FOOTER ****************/
+
+.weather-plan-footer {
+	background-color: var(--first-color);
+	color: var(--third-color);
+	font-size: 1.3rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+.weather-plan-info a {
+	color: var(--fourth-color);
+}
+
+.weather-plan-info a:hover {
+	color: var(--fifth-color);
+}
+
+.weather-plan-info p:nth-child(1) {
+	margin-bottom: 1rem;
+}
+
+.weather-plan-info p:nth-child(2) {
+	color: var(--sixth-color);
+}

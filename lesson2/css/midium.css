@@ -1,0 +1,42 @@
+/* Now let’s see some common breakpoints for widths of devices:
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+ */
+
+@media screen and (max-width: 840px) {
+	.weather-plan-nav ul {
+		align-items: center;
+		/* flex-direction: column; */
+		padding-bottom: 0;
+	}
+
+	.weather-plan-nav li {
+		margin-bottom: 1rem;
+	}
+
+	.weather-plan-nav a {
+		font-size: 1rem;
+	}
+
+	.weather-plan h1 {
+		text-align: center;
+		/* font-size: 3.5rem; */
+		margin-bottom: 0;
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 615px) {
+	.weather-plan-nav ul {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.weather-plan h1 {
+		text-align: center;
+		font-size: 2.5rem;
+		padding-bottom: 1rem;
+	}
+}
