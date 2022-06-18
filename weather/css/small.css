@@ -23,6 +23,10 @@ html {
 	--box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+img {
+	max-width: 100%;
+}
+
 /* ********** HEADER ********** */
 
 .preston-header img {
@@ -37,6 +41,8 @@ html {
 	background-color: var(--background-color);
 	color: var(--h1-color);
 	padding: 0.6rem;
+	border: 1px solid yellow;
+	min-width: 380px;
 }
 
 .header-tile {
@@ -57,6 +63,11 @@ html {
 	text-shadow: var(--dark-shadow);
 }
 
+.ham {
+	align-self: center;
+	justify-self: center;
+}
+
 /* ************* NAVIGATION ****************/
 
 nav {
@@ -65,7 +76,8 @@ nav {
 	font-family: var(--font-family-secondary);
 	margin: 0 auto;
 	max-width: 960px;
-	/* border: 1px solid red; */
+	min-width: 380px;
+	border: 1px solid red;
 }
 
 .navigation {
@@ -100,7 +112,8 @@ nav {
 
 .ham::before {
 	/* content: url(/weather/images/ham-icon-5.png); */
-	content: "⏬";
+	content: url("/weather/images/menu-icon-3.png");
+	/* margin-right: 1.5rem; */
 }
 
 /* OnClick JS */
