@@ -16,4 +16,23 @@
 	.navigation li:first-child {
 		display: none;
 	}
+
+	.header-tile h1 {
+		font-size: 2.5rem;
+		/* text-shadow: var(--dark-shadow); */
+	}
+
+	.header-tile h2 {
+		font-size: 1.3rem;
+		margin-top: 0.5rem;
+	}
+
+	.navigation a {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	.contact-info {
+		font-size: 1.2rem;
+	}
 } /*end medium */

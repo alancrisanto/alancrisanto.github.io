@@ -41,7 +41,7 @@ img {
 	background-color: var(--background-color);
 	color: var(--h1-color);
 	padding: 0.6rem;
-	border: 1px solid yellow;
+	/* border: 1px solid yellow; */
 	/* min-width: 380px; */
 }
 
@@ -71,7 +71,7 @@ nav {
 	font-family: var(--font-family-secondary);
 	margin: 0 auto;
 	/* min-width: 380px; */
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .navigation {
@@ -124,12 +124,14 @@ nav {
 
 .container {
 	display: block;
+	text-align: center;
 }
 
 .cards {
 	border: 1px solid #ccc;
 	margin: 1rem;
 	box-shadow: var(--box-shadow);
+	text-align: left;
 }
 
 .cards h3 {
@@ -143,4 +145,8 @@ nav {
 	color: var(--h1-color);
 	text-align: center;
 	padding: 1rem;
+}
+
+.updated {
+	color: var(--h2-color);
 }
