@@ -19,6 +19,8 @@ html {
 	--links-color: #4b7bec;
 	--font-family-primary: "Noto Sans", sans-serif;
 	--font-family-secondary: "Source Serif Pro", serif;
+	--dark-shadow: 1px 1px 4px rgb(27, 26, 26);
+	--box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* ********** HEADER ********** */
@@ -45,12 +47,14 @@ html {
 	color: var(--h1-color);
 	font-family: var(--font-family-primary);
 	margin: 0.5rem;
+	/* text-shadow: var(--dark-shadow); */
 }
 
 .header-tile h2 {
 	font-family: var(--font-family-secondary);
 	font-size: 1rem;
 	color: var(--h2-color);
+	text-shadow: var(--dark-shadow);
 }
 
 /* ************* NAVIGATION ****************/
@@ -95,15 +99,16 @@ nav {
 }
 
 .ham::before {
-	content: url(/weather/images/ham-icon-4.png);
-	padding-right: 0.5rem;
-	padding-top: 10px;
+	/* content: url(/weather/images/ham-icon-5.png); */
+	content: "⏬";
 }
+
+/* OnClick JS */
 
 .responsive li {
 	display: block;
 }
 
 .responsive a.ham::before {
-	content: "";
+	content: "❌";
 }
