@@ -12,15 +12,30 @@ html {
 }
 
 :root {
-	--background-color: #4b6584;
-	--background-color-2: #778ca3;
+	--background-color-1: hsl(213, 28%, 41%);
+	--background-color-2: hsl(211, 19%, 55%);
+	--background-color-3: hsl(212, 19%, 85%);
 	--h1-color: #eee;
-	--h2-color: #0fb9b1;
-	--links-color: #4b7bec;
+	--h2-color: hsl(177, 85%, 39%);
+	--text-color: hsl(212, 19%, 85%);
+	--links-color: hsl(222, 81%, 61%);
+	--link2-color: hsl(12, 83%, 62%);
 	--font-family-primary: "Noto Sans", sans-serif;
 	--font-family-secondary: "Source Serif Pro", serif;
-	--dark-shadow: 1px 1px 4px rgb(27, 26, 26);
-	--box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	--dark-shadow: 1px 1px 4px hsl(0, 2%, 10%);
+	--box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+h1 {
+	font-family: var(--font-family-primary);
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+	font-family: var(--font-family-secondary);
 }
 
 img {
@@ -38,7 +53,7 @@ img {
 .preston-header {
 	display: flex;
 	gap: 1rem;
-	background-color: var(--background-color);
+	background-color: var(--background-color-1);
 	color: var(--h1-color);
 	padding: 0.6rem;
 	/* border: 1px solid yellow; */
@@ -51,13 +66,11 @@ img {
 
 .header-tile h1 {
 	color: var(--h1-color);
-	font-family: var(--font-family-primary);
 	margin: 0.5rem;
 	/* text-shadow: var(--dark-shadow); */
 }
 
 .header-tile h2 {
-	font-family: var(--font-family-secondary);
 	font-size: 1rem;
 	color: var(--h2-color);
 	text-shadow: var(--dark-shadow);
@@ -127,16 +140,118 @@ nav {
 	text-align: center;
 }
 
-.cards {
-	border: 1px solid #ccc;
-	margin: 1rem;
-	box-shadow: var(--box-shadow);
+/* ********** HERO SECTION ******/
+
+.hero-section {
 	text-align: left;
 }
 
-.cards h3 {
-	padding: 1.5rem;
+.hero-section h2 {
+	padding-left: 1rem;
+	font-weight: 800;
 }
+
+.hero-summary {
+	position: static;
+	border: 1px solid var(--background-color-3);
+	background-color: rgba(52, 152, 219, 1);
+	margin-top: -0.31rem;
+	text-align: left;
+}
+
+.hero-summary h3 {
+	color: var(--h1-color);
+	margin: 0;
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+}
+
+.summary-description {
+	display: flex;
+	justify-content: start;
+	gap: 1rem;
+	padding-left: 1rem;
+}
+
+.summary-description div:nth-child(2) {
+	color: var(--h1-color);
+}
+
+/* ********* FORECAST ************* */
+.forecast {
+	display: none;
+}
+
+/* ******** ARTCILE ************* */
+.article {
+	border: 1px solid black;
+	text-align: center;
+}
+
+.article h3 {
+	background-color: var(--background-color-3);
+	margin: 0;
+	padding: 2rem 1rem;
+}
+
+.article h4 {
+	color: var(--background-color-2);
+	font-weight: 600;
+	text-align: left;
+	padding-left: 1rem;
+	font-style: italic;
+}
+
+.article p {
+	text-align: justify;
+	padding: 0 1.5rem;
+}
+
+.article-img img {
+	padding: 0 1rem;
+}
+
+/* ******** END ARTCILE ************* */
+/* ********* CONTACT INFORMATION ******/
+
+.contact-information {
+	background-color: var(--background-color-3);
+	padding: 1rem;
+}
+
+.contact-information h3,
+h4 {
+	margin: 1rem;
+}
+
+.contact {
+	margin-bottom: 1rem;
+}
+
+.icons a {
+	text-decoration: none;
+}
+
+.contact-box {
+	display: grid;
+	grid-template-columns: 20px 150px;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-box p {
+	margin: 0.3rem;
+}
+
+/* .contact-box :first-child {
+	padding: 1rem;
+} */
+
+/* .contact-map {
+	display: none;
+} */
+
+/* ******* END MAIN CONTENT ******* */
 
 /* ********** FOOTER ********** */
 
@@ -145,8 +260,9 @@ nav {
 	color: var(--h1-color);
 	text-align: center;
 	padding: 1rem;
+	text-shadow: var(--dark-shadow);
 }
 
 .updated {
-	color: var(--h2-color);
+	color: var(--h1-color);
 }
