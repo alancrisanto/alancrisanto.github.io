@@ -110,4 +110,51 @@
 	/* .forecast-box p:nth-child(2) {
 		padding: 1rem;
 	} */
+
+	/* ****** END FORECAST ****** */
+
+	/* ****** ARTICLE ****** */
+
+	.article {
+		margin-top: 3rem;
+	}
+
+	.article-content {
+		display: block;
+		/* overflow: hidden; */
+	}
+
+	.clear-fix::after {
+		display: table;
+		content: "";
+		clear: both;
+	}
+
+	.article-img {
+		display: block;
+		float: right;
+		width: 400px;
+	}
+
+	/* ****** END ARTICLE ****** */
+
+	/* ****** MAP ****** */
+	.contact-information {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+	}
+	.contact-map {
+		display: block;
+	}
+	/* ****** END MAP ****** */
+
+	@media screen and (min-width: 990px) {
+		/* ****** MAP ****** */
+		.contact-information {
+			justify-content: center;
+			gap: 1rem;
+		}
+		/* ****** END MAP ****** */
+	}
 } /*end medium */

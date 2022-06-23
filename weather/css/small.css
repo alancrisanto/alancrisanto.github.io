@@ -202,12 +202,17 @@ nav {
 	font-style: italic;
 }
 
+.article-content {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 .article p {
 	text-align: justify;
 	padding: 0 1.5rem;
 }
 
-.article-img img {
+.article-img {
 	padding: 0 1rem;
 }
 
@@ -247,9 +252,10 @@ h4 {
 	padding: 1rem;
 } */
 
-/* .contact-map {
+.contact-map {
 	display: none;
-} */
+	/* margin-top: 1rem; */
+}
 
 /* ******* END MAIN CONTENT ******* */
 
