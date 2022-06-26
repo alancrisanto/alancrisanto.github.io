@@ -59,25 +59,31 @@
 			<article class="hero-section">
 				<h2>Preston Idaho</h2>
 				<picture class="hero-image">
-					<img src="/weather/images/hero-img-2.jpg" alt="scenery photo" />
+					<source media="" srcset="" />
+					<img
+						src="/weather/images/default.jpeg"
+						alt="scenery photo"
+						sizes="100vw"
+						srcset="/weather/images/small.jpg 560w, /weather/images/medium.jpg 960w, /weather/images/large.jpg 1024w"
+					/>
 				</picture>
 				<div class="hero-summary">
 					<h3>Weather Summary</h3>
 					<hr />
 					<div class="summary-description">
-						<div>
+						<div class="description">
 							<h5>Currently: </h5>
 							<h5>High: </h5>
 							<h5>Wind Chill: </h5>
 							<h5>Humidity: </h5>
 							<h5>Wind Speed: </h5>
 						</div>
-						<div>
-							<h5>Sunny</h5>
-							<h5>76 °F</h5>
-							<h5>°F</h5>
-							<h5>69%</h5>
-							<h5>5 mph</h5>
+						<div class="values">
+							<h5 class="currently">Sunny</h5>
+							<h5 class="temperature">26 °F</h5>
+							<h5 class="windchill">°F</h5>
+							<h5 class="humidity">69%</h5>
+							<h5 class="windSpeed">10 mph</h5>
 						</div>
 					</div>
 				</div>
@@ -117,7 +123,16 @@
 				<h4>Article Title</h4>
 				<div class="article-content clear-fix">
 					<picture class="article-img">
-						<img src="/weather/images/hero-img-5.jpg" alt="river photo" />
+						<img
+							src="/weather/images/hero-img-5.jpg"
+							alt="river photo"
+							sizes="30%"
+							srcset="
+								/weather/images/small-1.jpg   600w,
+								/weather/images/medium-1.jpg  800w,
+								/weather/images/large-1.jpg  1000w
+							"
+						/>
 					</picture>
 					<p>
 						I was recently reflecting upon the founders day event held at Foundation Park each year. I have been taking
@@ -177,5 +192,6 @@
 		</footer>
 
 		<script src="js/scripts.js"></script>
+		<script src="js/windchill.js"></script>
 	</body>
 </html>
