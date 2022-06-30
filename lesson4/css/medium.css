@@ -1,0 +1,13 @@
+/* 32.5em = 520px */
+@media only screen and (min-width: 35em) {
+	.gallery-photo {
+		margin: 0;
+	}
+
+	.gallery-container {
+		display: grid;
+		grid-template-columns: repeat(2, 250px);
+		gap: 1rem;
+		justify-content: center;
+	}
+}
