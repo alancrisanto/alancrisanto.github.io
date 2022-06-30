@@ -282,3 +282,39 @@ h4 {
 .updated {
 	color: var(--h1-color);
 }
+
+/* ********* MAIN GALLERY-7 ********** */
+
+/* MAIN GRID */
+
+.gallery-container {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0 2rem 0;
+}
+
+.gallery-photo {
+	margin: 1rem auto;
+	border: thin #c0c0c0 solid;
+	overflow: hidden;
+}
+
+.gallery-photo img {
+	max-width: 100%;
+	margin: 0 auto;
+	filter: blur(0);
+}
+
+.gallery-photo img[data-src] {
+	filter: blur(0.2em);
+}
+
+.gallery-description {
+	background-color: #eee;
+	padding: 0.7rem;
+	margin: -4px;
+	text-align: center;
+	font-weight: 600;
+}
+
+/* ********* END MAIN GALLERY-7 ********** */
