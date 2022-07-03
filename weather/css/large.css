@@ -27,8 +27,15 @@
 	/* ****** FORM STYLES ***** */
 
 	form {
+		font-size: 1.3rem;
+	}
+
+	form label.top,
+	form label.range,
+	div {
 		font-size: 1.2rem;
 	}
+
 	form label.danger {
 		padding: 0.4rem 0;
 	}
