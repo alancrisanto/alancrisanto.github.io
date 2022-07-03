@@ -23,13 +23,13 @@
 		/>
 
 		<!-- STYLE SHEETS -->
-		<link href="css/normalize.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/weather/css/normalize.css" />
 		<!-- phone-default -->
-		<link href="css/small.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/weather/css/small.css" />
 		<!-- enhance-tablet -->
-		<link href="css/medium.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/weather/css/medium.css" />
 		<!-- enhance-desktop -->
-		<link href="css/large.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/weather/css/large.css" />
 	</head>
 	<body class="body">
 		<!-- HEADER HERE -->
@@ -45,100 +45,74 @@
 		<nav>
 			<ul class="navigation">
 				<li><a href="#" class="ham">Menu</a></li>
-				<li><a href="#">Home</a></li>
+				<li><a href="/weather/preston.html">Home</a></li>
 				<li><a href="#">Preston</a></li>
 				<li><a href="#">Soda Springs</a></li>
 				<li><a href="#">Fish Haven</a></li>
-				<li><a href="/lesson4/stormcenter.html">Storm Center</a></li>
+				<li><a href="stormcenter.html">Storm Center</a></li>
 				<li><a href="/lesson4/gallery-7.html">Gallery</a></li>
 			</ul>
 		</nav>
 
 		<!-- CONTENT HERE -->
 		<main class="container">
-			<article class="hero-section">
-				<h2>Preston Idaho</h2>
-				<picture class="hero-image">
-					<source media="" srcset="" />
-					<img
-						src="/weather/images/default.jpeg"
-						alt="scenery photo"
-						sizes="100vw"
-						srcset="/weather/images/small.jpg 560w, /weather/images/medium.jpg 960w, /weather/images/large.jpg 1024w"
-					/>
-				</picture>
-				<div class="hero-summary">
-					<h3>Weather Summary</h3>
-					<hr />
-					<div class="summary-description">
-						<div class="description">
-							<h5>Currently: </h5>
-							<h5>High: </h5>
-							<h5>Wind Chill: </h5>
-							<h5>Humidity: </h5>
-							<h5>Wind Speed: </h5>
-						</div>
-						<div class="values">
-							<h5 class="currently">Sunny</h5>
-							<h5 class="temperature">26 °F</h5>
-							<h5 class="windchill">°F</h5>
-							<h5 class="humidity">69%</h5>
-							<h5 class="windSpeed">10 mph</h5>
-						</div>
-					</div>
-				</div>
-			</article>
+			<div class="form">
+				<form action="">
+					<fieldset>
+						<legend>User Information</legend>
+						<label class="top"
+							>Full name
+							<input type="text" name="fname" placeholder="Full Name" required pattern="[A-Za-z\s]{5,}" />
+						</label>
+						<label class="top">Email <input type="email" name="email" placeholder="email@domain.com" /></label>
+						<label class="top">Phone Number <input type="tel" name="phone" placeholder="123456789" required /></label>
+						<label class="top"
+							>Zip Code <input type="number" name="zcode" placeholder="" pattern="(\d{5}([\-]\d{4})?)"
+						/></label>
+					</fieldset>
 
-			<article class="forecast">
-				<h3>Five Day Forecast</h3>
-				<div class="forecast-flex">
-					<div class="forecast-box">
-						<p>Wed</p>
-						<p>🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p>Thu</p>
-						<p>🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p>Fri</p>
-						<p>🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p>Sat</p>
-						<p>🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p>Sun</p>
-						<p>🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p>Wed</p>
-						<p>🌤️</p>
-					</div>
-				</div>
-			</article>
-			<article class="article">
-				<h3 class="article-title">Founders Day Fresco</h3>
-				<h4>Article Title</h4>
-				<div class="article-content clear-fix">
-					<picture class="article-img">
-						<img
-							src="/weather/images/hero-img-5.jpg"
-							alt="river photo"
-							sizes="30%"
-							srcset="/weather/images/small-1.jpg 600w, /weather/images/medium-1.jpg 800w, /weather/images/large-1.jpg 1000w"
-						/>
-					</picture>
-					<p>
-						I was recently reflecting upon the founders day event held at Foundation Park each year. I have been taking the festival for
-						granted and have not been properly engaging in perhaps the most papular community event of the year. In response, I contacted
-						Ms. Sharon via email and expressed my desire to serve on the event committee. Well, you guessed it, the phone rings almost
-						immediately and she promptly asks me to be the event committee chair. Literally, good grief! My appreciation for the years of
-						dedicated, generous service of volunteers and sponsors has escalated beyond what I thought I could feel for such a thing and...
-					</p>
-				</div>
-			</article>
+					<fieldset>
+						<legend> Storm Information </legend>
+
+						<label class="top">Storm Date <input type="date" name="date" /></label>
+						<label class="top">
+							Storm Type
+							<input type="text" name="storm-type" list="storm-type" />
+							<datalist id="storm-type">
+								<option value="Flash Food"> </option><option value="Hail"> </option><option value="Hurricane"> </option
+								><option value="Thunderstorm"> </option><option value="Tornado"> </option
+							></datalist>
+						</label>
+
+						<label class="top range">
+							Storm Severity
+							<input type="range" name="severity" min="1" max="10" step="1" />
+						</label>
+						<label class="top"
+							>Storm Region
+							<select>
+								<option value="" disabled selected>Please Select &#9662;</option>
+								<option value="preston">Preston</option>
+								<option value="soda">Soda Spring</option>
+								<option value="haven">Fish Haven</option>
+							</select>
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Danger</legend>
+						<div>User in-danger Level</div>
+						<label class="danger"><input type="radio" name="danger" />Yes</label>
+						<label class="danger"><input type="radio" name="danger" />No</label>
+						<label class="danger"><input type="radio" name="danger" />Maybe</label>
+					</fieldset>
+					<label>
+						Additional Information
+						<textarea name="comments" id="" cols="30" rows="10">Enter text here</textarea>
+					</label>
+
+					<input type="submit" value="Register" />
+				</form>
+			</div>
 			<section class="contact-information">
 				<div class="information">
 					<h3>Contact Information</h3>
@@ -186,7 +160,6 @@
 			<p class="updated"></p>
 		</footer>
 
-		<script src="js/scripts.js"></script>
-		<script src="js/windchill.js"></script>
+		<script src="/weather/js/scripts.js"></script>
 	</body>
 </html>
