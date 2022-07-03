@@ -5,7 +5,8 @@
 		margin: 0 auto;
 	}
 
-	/* PHOTO GALLERY CONTAINER */
+	/* ****** PHOTO GALLERY CONTAINER ***** */
+
 	.gallery-container {
 		grid-template-columns: repeat(3, 300px);
 		justify-content: center;
@@ -21,4 +22,15 @@
 		transform: scale(0.9);
 		opacity: 0.8;
 	}
+	/* ****** END PHOTO GALLERY CONTAINER ***** */
+
+	/* ****** FORM STYLES ***** */
+
+	form {
+		font-size: 1.2rem;
+	}
+	form label.danger {
+		padding: 0.4rem 0;
+	}
+	/* ****** END FORM STYLES ***** */
 } /*end large */
