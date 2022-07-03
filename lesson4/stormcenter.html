@@ -67,7 +67,7 @@
 						<label class="top">Email <input type="email" name="email" placeholder="email@domain.com" /></label>
 						<label class="top">Phone Number <input type="tel" name="phone" placeholder="123456789" required /></label>
 						<label class="top"
-							>Zip Code <input type="number" name="zcode" placeholder="" pattern="(\d{5}([\-]\d{4})?)"
+							>Zip Code <input type="number" name="zcode" placeholder="" pattern="(\d{5}([\-]\d{4})?)" required
 						/></label>
 					</fieldset>
 
@@ -84,7 +84,7 @@
 							></datalist>
 						</label>
 
-						<label class="top range">
+						<label class="range">
 							Storm Severity
 							<input type="range" name="severity" min="1" max="10" step="1" />
 						</label>
@@ -101,16 +101,18 @@
 					<fieldset>
 						<legend>Danger</legend>
 						<div>User in-danger Level</div>
-						<label class="danger"><input type="radio" name="danger" />Yes</label>
-						<label class="danger"><input type="radio" name="danger" />No</label>
-						<label class="danger"><input type="radio" name="danger" />Maybe</label>
+						<label class="danger"><input type="radio" name="danger" /> Yes</label>
+						<label class="danger"><input type="radio" name="danger" /> No</label>
+						<label class="danger"><input type="radio" name="danger" /> Maybe</label>
 					</fieldset>
-					<label>
-						Additional Information
-						<textarea name="comments" id="" cols="30" rows="10">Enter text here</textarea>
-					</label>
+					<fieldset>
+						<legend>Additional Information</legend>
 
-					<input type="submit" value="Register" />
+						<label class="top">
+							<textarea name="comments" id="" cols="30" rows="10">Enter text here</textarea>
+						</label>
+					</fieldset>
+					<input class="submitBtn" type="submit" value="Send Information" />
 				</form>
 			</div>
 			<section class="contact-information">
