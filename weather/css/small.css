@@ -336,7 +336,7 @@ form legend {
 
 form label.top,
 form label.range,
-div {
+.danger-title {
 	display: block;
 	padding-top: 1rem;
 	color: var(--links-color);
