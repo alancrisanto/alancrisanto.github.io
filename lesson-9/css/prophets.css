@@ -1,0 +1,103 @@
+header {
+	text-align: center;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	/* background: linear-gradient(90deg, #ada996 0%, #f2f2f2 33%, #dbdbdb 66%, #eaeaea 100%); */
+	background: linear-gradient(90deg, #c9d6ff 0%, #e2e2e2 100%);
+	color: rgba(0, 0, 0, 0.8);
+	border-bottom: #16161a;
+}
+
+main {
+	margin: 0 auto;
+}
+
+img {
+	max-width: 80%;
+	height: auto;
+}
+.cards {
+	display: block;
+	justify-items: center;
+	text-align: center;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: rgba(216, 211, 211, 0.2);
+	background: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
+	padding: 0.75rem;
+	margin: 1rem;
+}
+
+section img {
+	flex: 1;
+	margin-bottom: 0.75rem;
+}
+
+section:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+	margin-top: 0.3rem;
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-family: "Playball", cursive;
+	font-weight: 800;
+	color: rgba(156, 83, 11, 0.7);
+	/* color: rgba(224, 205, 102, 1); */
+}
+
+h4,
+h5 {
+	font-family: "Cormorant Garamond", serif;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+h5 {
+	margin-top: 0;
+}
+
+footer {
+	text-align: center;
+	background: rgba(178, 178, 255, 1);
+	padding: 1.5rem;
+	color: #232333;
+	font-size: 1.3rem;
+}
+
+@media screen and (min-width: 35em) {
+	main {
+		max-width: 800px;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 64em) {
+	main {
+		max-width: 1026px;
+	}
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	section {
+		margin: 0.85rem;
+	}
+}
