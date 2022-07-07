@@ -54,10 +54,12 @@
 		margin: 0.8rem;
 		padding: 0;
 		gap: 0;
+		overflow: hidden;
 	}
 
 	.town-card:nth-child(odd) {
 		flex-direction: column;
+		overflow: hidden;
 	}
 
 	.town-info {
