@@ -169,4 +169,30 @@
 		gap: 1rem;
 		justify-content: center;
 	}
+
+	/* ********** TOWN STYLES ************ */
+
+	.town-card {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		/* grid-template-columns: 1fr 1fr; */
+		align-items: center;
+	}
+
+	.town-card:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.town-info {
+		min-width: 200px;
+		font-size: 0.85rem;
+	}
+
+	.town-image img {
+		flex: 1;
+		min-height: 230px;
+	}
+
+	/* ********** END TOWN STYLES ************ */
 } /*end medium */

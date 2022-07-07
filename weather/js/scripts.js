@@ -62,47 +62,60 @@ const urlData = "https://byui-cit230.github.io/weather/data/towndata.json";
 let towns = [];
 
 const output = (towns) => {
-	towns.map((town) => {
-		const divInfo = document.createElement("div");
-		const divImg = document.createElement("div");
-		const divCard = document.createElement("div");
+	towns.map((town, index) => {
+		console.log(index);
+		if (index === 0 || index === 2 || index === 6) {
+			const divInfo = document.createElement("div");
+			const divImg = document.createElement("div");
+			const divCard = document.createElement("div");
 
-		const h2Title = document.createElement("h2");
-		const pMotto = document.createElement("p");
-		const h4Year = document.createElement("h4");
-		const h4Population = document.createElement("h4");
-		const h4Rain = document.createElement("h4");
-		const townImage = document.createElement("img");
+			const h2Title = document.createElement("h2");
+			const pMotto = document.createElement("p");
+			const h4Year = document.createElement("h4");
+			const h4Population = document.createElement("h4");
+			const h4Rain = document.createElement("h4");
+			const townImage = document.createElement("img");
 
-		h2Title.textContent = town.name;
-		pMotto.textContent = town.motto;
-		h4Year.textContent = `Year Founded: ${town.yearFounded}`;
-		h4Population.textContent = `Population: ${town.currentPopulation}`;
-		h4Rain.textContent = `Anual Rain Fall: ${town.averageRainfall}`;
-		townImage.setAttribute("src", `${town.photo}`);
-		townImage.setAttribute("alt", `${town.name} photo`);
+			h2Title.textContent = town.name;
+			pMotto.textContent = town.motto;
+			h4Year.textContent = `Year Founded: ${town.yearFounded}`;
+			h4Population.textContent = `Population: ${town.currentPopulation}`;
+			h4Rain.textContent = `Anual Rain Fall: ${town.averageRainfall}`;
 
-		divInfo.appendChild(h2Title);
-		divInfo.appendChild(pMotto);
-		divInfo.appendChild(h4Year);
-		divInfo.appendChild(h4Population);
-		divInfo.appendChild(h4Rain);
-		divImg.appendChild(townImage);
+			if (index === 0) {
+				townImage.setAttribute("src", "assets/images/soda-spring.jpg");
 
-		divCard.appendChild(divInfo);
-		divCard.appendChild(divImg);
+				townImage.setAttribute("alt", `${town.name} photo`);
+			} else if (index === 2) {
+				townImage.setAttribute("src", "assets/images/fish-haven.jpg");
+				townImage.setAttribute("alt", `${town.name} photo`);
+			} else {
+				townImage.setAttribute("src", "assets/images/preston.jpg");
+				townImage.setAttribute("alt", `${town.name} photo`);
+			}
 
-		divInfo.classList.add("town-info");
-		divImg.classList.add("town-image");
-		divCard.classList.add("town-card");
+			divInfo.appendChild(h2Title);
+			divInfo.appendChild(pMotto);
+			divInfo.appendChild(h4Year);
+			divInfo.appendChild(h4Population);
+			divInfo.appendChild(h4Rain);
+			divImg.appendChild(townImage);
 
-		document.querySelector(".town").appendChild(divCard);
+			divCard.appendChild(divInfo);
+			divCard.appendChild(divImg);
+
+			divInfo.classList.add("town-info");
+			divImg.classList.add("town-image");
+			divCard.classList.add("town-card");
+
+			document.querySelector(".town").appendChild(divCard);
+		}
 	});
 };
 
 const getData = async () => {
 	const response = await fetch(urlData);
-	console.log(response);
+	// console.log(response);
 	const data = await response.json();
 	console.log(data);
 	towns = data.towns;
