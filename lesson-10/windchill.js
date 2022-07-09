@@ -9,8 +9,8 @@ const calWindchil = async () => {
 	let s = +data.wind.speed;
 	let chill = document.querySelector(".windchill");
 
-	console.log(t);
-	console.log(s);
+	// console.log(t);
+	// console.log(s);
 
 	function windchill(t, s) {
 		const result = 35.74 + 0.6215 * t - 35.75 * s ** 0.16 + 0.4275 * t * s ** 0.16;

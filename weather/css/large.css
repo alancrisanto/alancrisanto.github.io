@@ -5,6 +5,16 @@
 		margin: 0 auto;
 	}
 
+	.hero-summary h3 {
+		padding-left: 0rem;
+		font-size: 1.8rem;
+	}
+
+	.summary-description {
+		font-size: 1.5rem;
+		line-height: 0.3rem;
+	}
+
 	/* ****** PHOTO GALLERY CONTAINER ***** */
 
 	.gallery-container {

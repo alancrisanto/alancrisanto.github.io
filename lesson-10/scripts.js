@@ -52,7 +52,7 @@ if (currentDate.getDay() === 5) {
 	displayMessage();
 }
 
-console.log("This is the day", currentDate.getDay());
+// console.log("This is the day", currentDate.getDay());
 
 // GET THE INFORMATION FROM THE WEATHER API
 
@@ -64,7 +64,7 @@ const getData = async () => {
 	const data = await response.json();
 	// const data = await responses;
 
-	console.log(data);
+	// console.log(data);
 	let currently = document.querySelector(".currently");
 	let temp = document.querySelector("#temp");
 	let humidity = document.querySelector(".humidity");
@@ -86,11 +86,11 @@ const forecastURL =
 const getForecast = async () => {
 	const resp = await fetch(forecastURL);
 	data = await resp.json();
-	console.log(data);
+	// console.log(data);
 
 	data.list.filter((value) => {
 		if (value.dt_txt.includes("18:00:00")) {
-			console.log(value);
+			// console.log(value);
 
 			const forcastFlex = document.querySelector(".forecast-flex");
 			const divForecast = document.createElement("div");
@@ -109,8 +109,8 @@ const getForecast = async () => {
 
 			// CONVERTING THE STRING TO DATE OBJECT AND SET UTC TIME
 			const currentDate = new Date(currentDay).toUTCString();
-			console.log(currentDate);
-			console.log(currentDay);
+			// console.log(currentDate);
+			// console.log(currentDay);
 
 			// PASSING THE DATE AND THE TEMPERATURE
 			pDay.textContent = currentDate.slice(0, 3);

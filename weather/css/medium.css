@@ -61,9 +61,9 @@
 		position: relative;
 	}
 
-	.hero-image {
-		opacity: 0.3;
-	}
+	/* .hero-image {
+		opacity: 0.955;
+	} */
 	.hero-summary {
 		position: absolute;
 		top: 57%;
@@ -74,6 +74,11 @@
 
 	.hero-summary h3 {
 		padding-left: 0rem;
+	}
+
+	.summary-description {
+		font-size: 1rem;
+		line-height: 0.3rem;
 	}
 
 	/* ******END HERO SECTION ****** */
@@ -107,9 +112,9 @@
 		border-bottom: 1px solid;
 	}
 
-	/* .forecast-box p:nth-child(2) {
-		padding: 1rem;
-	} */
+	.forecast-box p:nth-child(3) {
+		padding: 0 1rem;
+	}
 
 	/* ****** END FORECAST ****** */
 
