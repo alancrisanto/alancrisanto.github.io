@@ -65,6 +65,8 @@ let towns = [];
 const output = (towns) => {
 	towns.map((town, index) => {
 		console.log(index);
+		// let name = towns[i].name;
+		// if (name == "Preston" || name == "Soda Springs" || name == "Fish Haven")
 		if (index === 0 || index === 2 || index === 6) {
 			const divInfo = document.createElement("div");
 			const divImg = document.createElement("div");
@@ -127,8 +129,38 @@ getTowns();
 
 // GET THE INFORMATION FROM THE WEATHER API
 
-const apiURL =
-	"https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial";
+const activePage = document.querySelector(".active").textContent;
+
+let apiURL;
+let forecastURL;
+
+let townID = [
+	5604473, //Preston
+	5607916, //Soda Springs
+	5585010, //Fish Haven
+];
+
+switch (activePage) {
+	case "Preston":
+		apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${townID[0]}&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial`;
+
+		forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${townID[0]}&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial`;
+
+		break;
+
+	case "Soda Springs":
+		apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${townID[1]}&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial`;
+
+		forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${townID[1]}&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial`;
+
+		break;
+
+	default:
+		apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${townID[2]}&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial`;
+
+		forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${townID[2]}&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial`;
+		break;
+}
 
 const getData = async () => {
 	const response = await fetch(apiURL);
@@ -150,9 +182,6 @@ const getData = async () => {
 getData();
 
 // FORECAST API CALL
-
-const forecastURL =
-	"https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial";
 
 const getForecast = async () => {
 	const resp = await fetch(forecastURL);
