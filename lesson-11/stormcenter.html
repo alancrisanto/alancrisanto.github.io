@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Weather application to know the state of the weather in different cities. " />
+		<meta name="author" content="Alan Crisanto" />
+
+		<!-- This start file was build by Paul Cheney  -->
+		<title>Sun&Cloud Weather Site</title>
+
+		<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<!-- TABS ICON -->
+		<link rel="icon" type="image/png" href="/lesson-11/assets/images/sun&cloud-icon.png" />
+
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;600;800&family=Source+Serif+Pro:ital,wght@0,200;0,400;1,200&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- STYLE SHEETS -->
+		<link rel="stylesheet" href="/lesson-11/css/normalize.css" />
+		<!-- phone-default -->
+		<link rel="stylesheet" href="/lesson-11/css/small.css" />
+		<!-- enhance-tablet -->
+		<link rel="stylesheet" href="/lesson-11/css/medium.css" />
+		<!-- enhance-desktop -->
+		<link rel="stylesheet" href="/lesson-11/css/large.css" />
+	</head>
+	<body class="body">
+		<!-- HEADER HERE -->
+		<header class="preston-header">
+			<img src="/lesson-11/assets/images/sun&cloud.png" alt="" />
+			<div class="header-tile">
+				<h1>Sun&Cloud</h1>
+				<h2>Weather News Anywhere</h2>
+			</div>
+		</header>
+
+		<!-- NAVIGATION HERE -->
+		<nav>
+			<ul class="navigation">
+				<li><a href="#" class="ham">Menu</a></li>
+				<li><a href="/lesson-11/index.html">Home</a></li>
+				<li><a href="/lesson-11/preston.html">Preston</a></li>
+				<li><a href="#">Soda Springs</a></li>
+				<li><a href="#">Fish Haven</a></li>
+				<li><a href="/lesson-11/stormcenter.html">Storm Center</a></li>
+				<li><a href="/lesson-11/gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+
+		<!-- CONTENT HERE -->
+		<main class="container">
+			<div class="form">
+				<form action="#">
+					<fieldset>
+						<legend>User Information</legend>
+						<label class="top"
+							>Full name
+							<input type="text" name="fname" placeholder="Full Name" required pattern="[A-Za-z\s]{5,}" />
+						</label>
+						<label class="top">Email <input type="email" name="email" placeholder="email@domain.com" /></label>
+						<label class="top">Phone Number <input type="tel" name="phone" placeholder="123456789" required /></label>
+						<label class="top"
+							>Zip Code <input type="text" name="zcode" placeholder="07051" pattern="(\d{5}([\-]\d{4})?)" required
+						/></label>
+					</fieldset>
+
+					<fieldset>
+						<legend> Storm Information </legend>
+
+						<label class="top">Storm Date <input type="date" name="date" /></label>
+						<label class="top">
+							Storm Type
+							<input name="storm-type" list="storm-type" />
+							<datalist id="storm-type">
+								<option value="Flash Flood"></option>
+								<option value="Hail"></option>
+								<option value="Hurricane"></option>
+								<option value="Thunderstorm"></option>
+								<option value="Tornado"></option>
+							</datalist>
+						</label>
+
+						<label class="range">
+							Storm Severity
+							<input type="range" name="severity" min="1" max="10" step="1" />
+						</label>
+						<label class="top"
+							>Storm Region
+							<select>
+								<option value="" disabled selected>Please Select &#9662;</option>
+								<option value="preston">Preston</option>
+								<option value="soda">Soda Spring</option>
+								<option value="haven">Fish Haven</option>
+							</select>
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Danger</legend>
+						<div class="danger-title">User in-danger Level</div>
+						<label class="danger"><input type="radio" name="danger" /> Yes</label>
+						<label class="danger"><input type="radio" name="danger" /> No</label>
+						<label class="danger"><input type="radio" name="danger" /> Maybe</label>
+					</fieldset>
+					<fieldset>
+						<legend>Additional Information</legend>
+
+						<label class="top">
+							<textarea name="comments" cols="30" rows="10">Enter text here</textarea>
+						</label>
+					</fieldset>
+					<input class="submitBtn" type="submit" value="Send Information" />
+				</form>
+			</div>
+			<section class="contact-information">
+				<div class="information">
+					<h3>Contact Information</h3>
+					<h4>Sun&Cloud Weather</h4>
+					<div class="contact">
+						<div class="contact-box">
+							<img src="https://img.icons8.com/office/16/FFFFFF/marker.png" alt="location icon" />
+							<p>Jesus María, Peru</p>
+						</div>
+						<div class="contact-box">
+							<a href="https://api.whatsapp.com/send?phone=51996737936&text=Hello" target="_blank">
+								<img src="https://img.icons8.com/color/32/FFFFFF/whatsapp--v1.png" alt="whatsapp icon" />
+							</a>
+							<p>+51996737936</p>
+						</div>
+					</div>
+					<div class="icons">
+						<a href="mailto:alanvcrisanto@gmail.com" target="_blank">
+							<img src="https://img.icons8.com/color/32/FFFFFF/gmail--v1.png" alt="gmail icon" />
+						</a>
+						<a href="https://github.com/alancrisanto" target="_blank">
+							<img src="https://img.icons8.com/plasticine/32/FFFFFF/github.png" alt="github icon" />
+						</a>
+						<a href="https://www.linkedin.com/in/alancrisanto/" target="_blank">
+							<img src="https://img.icons8.com/color/32/FFFFFF/linkedin-circled--v1.png" alt="linkedin icon" />
+						</a>
+					</div>
+				</div>
+				<iframe
+					class="contact-map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1264.9205109653715!2d-77.04848385463056!3d-12.074564104908553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9cb54278cb7%3A0x4087a9c355a45ca3!2sPlaza%20Diez%20Canseco!5e0!3m2!1ses-419!2spe!4v1655867683773!5m2!1ses-419!2spe"
+					width="330"
+					height="300"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</section>
+		</main>
+
+		<!-- FOOTER HERE -->
+		<footer class="contact-info">
+			<p>&copy; <span class="year"></span> |The Sun&Cloud Weather Site | Attributions | Alan Crisanto |</p>
+			<p class="updated"></p>
+		</footer>
+
+		<script src="/lesson-11/JS/scripts.js"></script>
+	</body>
+</html>

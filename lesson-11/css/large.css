@@ -1,0 +1,85 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+	.container {
+		max-width: 990px;
+		margin: 0 auto;
+	}
+
+	.hero-summary h3 {
+		padding-left: 0rem;
+		font-size: 1.8rem;
+	}
+
+	.summary-description {
+		font-size: 1.5rem;
+		line-height: 0.3rem;
+	}
+
+	/* ****** PHOTO GALLERY CONTAINER ***** */
+
+	.gallery-container {
+		grid-template-columns: repeat(3, 300px);
+		justify-content: center;
+	}
+
+	.gallery-photo {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+	}
+
+	.gallery-photo:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		transform: scale(0.9);
+		opacity: 0.8;
+	}
+	/* ****** END PHOTO GALLERY CONTAINER ***** */
+
+	/* ****** FORM STYLES ***** */
+
+	form {
+		font-size: 1.3rem;
+	}
+
+	form label.top,
+	form label.range,
+	.danger-title {
+		font-size: 1.2rem;
+	}
+
+	form label.danger {
+		padding: 0.4rem 0;
+	}
+	/* ****** END FORM STYLES ***** */
+
+	/* ********** TOWN STYLES ************ */
+	.town {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		margin-top: 3rem;
+	}
+
+	.town-card {
+		flex-direction: column;
+		margin: 0.8rem;
+		padding: 0;
+		gap: 0;
+		overflow: hidden;
+	}
+
+	.town-card:nth-child(odd) {
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.town-info {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+
+	.town-image img {
+		height: 100%;
+	}
+
+	/* ********** END TOWN STYLES ************ */
+} /*end large */
