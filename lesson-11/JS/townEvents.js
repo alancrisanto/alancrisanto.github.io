@@ -23,7 +23,7 @@ const getTownData = async () => {
 	const response = await fetch(TownData);
 	// console.log(response);
 	const data = await response.json();
-	console.log("data from towns", data.towns);
+	// console.log("data from towns", data.towns);
 	townsList = data.towns;
 	townEvents(towns);
 };
