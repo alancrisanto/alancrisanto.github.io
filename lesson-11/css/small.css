@@ -115,6 +115,7 @@ nav {
 
 .navigation a {
 	color: white;
+	text-shadow: var(--dark-shadow);
 	display: block;
 	font-size: 1rem;
 	text-decoration: none;
@@ -123,8 +124,9 @@ nav {
 }
 
 .navigation a:hover {
-	color: var(--links-color);
-	background-color: var(--h2-color);
+	color: black;
+	text-shadow: none;
+	background-color: var(--background-color-3);
 }
 
 .navigation a.ham::before {
