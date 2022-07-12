@@ -28,6 +28,7 @@
 
 	.navigation a {
 		text-align: center;
+		font-size: 1.5rem;
 	}
 
 	.navigation li:first-child {
