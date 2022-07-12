@@ -55,6 +55,15 @@
 
 	/* ****** END HEADER ****** */
 
+	/* ****** MAIN TITLE ****** */
+
+	.main-title {
+		text-align: left;
+		margin-left: 1rem;
+	}
+
+	/* ****** END MAIN TITLE ****** */
+
 	/* ******HERO SECTION ****** */
 
 	.hero-section {

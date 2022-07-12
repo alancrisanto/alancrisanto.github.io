@@ -62,9 +62,9 @@ const urlData = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 let towns = [];
 
-const output = (towns) => {
+const outputTowns = (towns) => {
 	towns.map((town, index) => {
-		console.log(index);
+		// console.log(town);
 		// let name = towns[i].name;
 		// if (name == "Preston" || name == "Soda Springs" || name == "Fish Haven")
 		if (index === 0 || index === 2 || index === 6) {
@@ -120,9 +120,10 @@ const getTowns = async () => {
 	const response = await fetch(urlData);
 	// console.log(response);
 	const data = await response.json();
-	console.log(data);
+	console.log("data from towns", data.towns);
 	towns = data.towns;
-	output(towns);
+	outputTowns(towns);
+	townEvents(towns);
 };
 
 getTowns();

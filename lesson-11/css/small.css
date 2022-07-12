@@ -150,6 +150,11 @@ nav {
 	text-align: center;
 }
 
+.main-title {
+	color: var(--link2-color);
+	text-align: center;
+}
+
 /* ********** HERO SECTION ******/
 
 .hero-section {
@@ -421,3 +426,16 @@ form label.top textarea:focus {
 	font-size: 0.75rem;
 }
 /* ********** END TOWNS STYLES ************ */
+
+/* ********** TOWN EVENTS STYLES ************ */
+
+.events {
+	background-color: var(--link2-color);
+	padding: 1.5rem;
+	margin: 2rem auto;
+}
+
+.events p {
+	font-size: 1rem;
+}
+/* ********** END TOWN EVENTS STYLES ************ */

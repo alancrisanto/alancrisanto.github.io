@@ -15,6 +15,13 @@
 		line-height: 0.3rem;
 	}
 
+	/* ****** MAIN TITLE ***** */
+	.main-title {
+		font-size: 3.2rem;
+	}
+
+	/* ****** END MAIN TITLE ***** */
+
 	/* ****** PHOTO GALLERY CONTAINER ***** */
 
 	.gallery-container {
@@ -82,4 +89,14 @@
 	}
 
 	/* ********** END TOWN STYLES ************ */
+
+	/* ********** TOWN EVENTS STYLES ************ */
+	.events {
+		max-width: 700px;
+	}
+	.events p {
+		font-size: 1.35rem;
+	}
+
+	/* ********** END TOWN EVENTS STYLES ************ */
 } /*end large */
