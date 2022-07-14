@@ -123,7 +123,6 @@ const getTowns = async () => {
 	// console.log("data from towns", data.towns);
 	towns = data.towns;
 	outputTowns(towns);
-	townEvents(towns);
 };
 
 getTowns();
