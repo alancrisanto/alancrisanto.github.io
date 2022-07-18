@@ -1,0 +1,206 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root {
+	--background-color-1: #ffcf00;
+	--background-color-2: #3454d1;
+	--background-color-3: #232323;
+	--background-color-4: #0cce6b;
+	--background-color-5: #ff6663;
+	--background-color-6: #e0d3de;
+	--navigation-color: #aaa;
+	--navigation-hover-color: #d6d6d6;
+	--color-white: white;
+	--color-black: black;
+	--font-family-header: "Righteous", cursive;
+	--font-family-text: "Roboto", sans-serif;
+}
+
+body {
+	font-family: var(--font-family-header);
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ------- HEADER LOGO -------- */
+.scoots-header {
+	background-color: var(--background-color-1);
+	padding: 1rem;
+	align-items: center;
+}
+
+.scoots-header img {
+	width: 250px;
+	height: auto;
+}
+
+/* ------- END HEADER LOGO -------- */
+
+/* ------- NAVBAR -------- */
+nav {
+	background: var(--background-color-4);
+	/* padding: 0.5rem; */
+	font-family: var(--font-family-secondary);
+	margin: 0 auto;
+	/* min-width: 380px; */
+	/* border: 1px solid red; */
+}
+
+.navigation {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.navigation li:first-child {
+	display: block;
+	font-size: 1.5rem;
+}
+
+.navigation li {
+	list-style: none;
+	display: none;
+}
+
+.navigation a {
+	color: var(--color-black);
+	display: block;
+	font-size: 1.25rem;
+	text-decoration: none;
+	text-align: left;
+	padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.navigation a:hover {
+	color: var(--background-color-5);
+	text-shadow: none;
+	background-color: var(--color-white);
+	border-bottom: 1px solid var(--background-color-4);
+}
+
+.navigation a.ham::before {
+	content: url("/final/assets/images/menu-icon-3.png");
+	margin-right: 1rem;
+}
+
+/* OnClick JS */
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: url("/final/assets/images/close-icon-1.png");
+}
+/* ------- END NAVBAR -------- */
+
+/* ------- WEATHER SUMMARY -------- */
+
+.hero-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weather-summary {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem;
+	min-width: 250px;
+	text-align: center;
+	margin: 2rem;
+	background: rgba(233, 188, 227, 0.35);
+	/* background: rgba(228, 195, 223, 0.35); */
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.weather-summary h5 {
+	font-family: var(--font-family-text);
+}
+
+.hero-image img {
+	height: 300px;
+	margin: 0 auto;
+}
+
+.hero-info {
+	text-align: center;
+	padding: 1rem;
+}
+
+.hero-info h1,
+.hero-info h3 {
+	text-align: center;
+	color: var(--background-color-5);
+}
+
+.hero-info p {
+	font-family: var(--font-family-text);
+	text-align: justify;
+}
+
+.hero-info button {
+	color: var(--color-white);
+	background-color: var(--background-color-4);
+	border: 1px solid var(--background-color-4);
+	padding: 0.5rem;
+	border-radius: 15px;
+	justify-self: center;
+	font-weight: 800;
+}
+
+.hero-info button:hover {
+	background-color: var(--background-color-5);
+	border: 1px solid var(--background-color-5);
+}
+
+/* ------- END WEATHER SUMMARY -------- */
+/* ------- FORECAST -------- */
+.forecast {
+	display: none;
+}
+
+/* ------- END FORECAST -------- */
+/* ------- HONDA GALLERY  -------- */
+.images-gallery {
+	margin: 2.5rem 0;
+}
+.honda-scoots {
+	text-align: center;
+	margin: 1.5rem 0;
+	padding: 1rem;
+}
+
+.honda-scoots:nth-child(odd) {
+	background-color: #eee;
+}
+
+.detailBtn {
+	background-color: var(--background-color-4);
+	border: 1px solid var(--background-color-4);
+	padding: 0.5rem;
+	color: var(--color-white);
+	border-radius: 15px;
+	font-weight: 800;
+}
+
+.detailBtn:hover {
+	background-color: var(--background-color-5);
+	border: 1px solid var(--background-color-5);
+}
+/* ------- END HONDA GALLERY -------- */
