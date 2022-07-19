@@ -133,6 +133,10 @@ nav {
 	font-family: var(--font-family-text);
 }
 
+.weather-data h3 {
+	color: var(--background-color-2);
+}
+
 .humidity {
 	margin-top: 1.1rem;
 }
