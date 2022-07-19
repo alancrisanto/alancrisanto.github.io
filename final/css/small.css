@@ -271,6 +271,13 @@ nav {
 
 .updated a {
 	text-decoration: none;
+}
+
+.updated .fa-brands {
 	color: var(--color-black);
+}
+
+.openWeather {
+	color: var(--background-color-5);
 }
 /* ------- END CONTACT INFORMATION --------*/
