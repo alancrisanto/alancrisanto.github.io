@@ -1,5 +1,5 @@
 const weatherURL =
-	"https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial";
+	"https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=3bd28921d4e0f537a8315fdda41b8c8d&units=imperial";
 
 const calWindchil = async () => {
 	const response = await fetch(weatherURL);
