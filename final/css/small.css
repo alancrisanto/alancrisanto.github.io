@@ -225,8 +225,12 @@ nav {
 
 .updated {
 	background-color: var(--background-color-1);
-	padding: 0.5rem;
+	padding: 0.55rem;
 	text-align: center;
+}
+
+.updated h3 {
+	margin: 0.5rem;
 }
 
 .contact-map {
