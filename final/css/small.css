@@ -204,3 +204,32 @@ nav {
 	border: 1px solid var(--background-color-5);
 }
 /* ------- END HONDA GALLERY -------- */
+
+/* ------- CONTACT INFORMATION --------*/
+.contact-footer {
+	background-color: var(--background-color-3);
+	font-family: var(--font-family-text);
+	font-size: 0.85rem;
+	color: var(--color-white);
+	padding: 1rem;
+	text-align: center;
+}
+
+.updated {
+	background-color: var(--background-color-1);
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.contact-map {
+	display: none;
+}
+
+.contact-adress h4 {
+	color: var(--background-color-4);
+}
+
+.fa-location-dot {
+	color: var(--background-color-5);
+}
+/* ------- END CONTACT INFORMATION --------*/
