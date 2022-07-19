@@ -225,11 +225,22 @@ nav {
 	display: none;
 }
 
+.contact-adress {
+	line-height: 0.35rem;
+	margin-bottom: 1.5rem;
+}
+
 .contact-adress h4 {
 	color: var(--background-color-4);
+	margin: 0;
 }
 
 .fa-location-dot {
 	color: var(--background-color-5);
+}
+
+.fa-brands {
+	font-size: 1.5rem;
+	margin-right: 1rem;
 }
 /* ------- END CONTACT INFORMATION --------*/
