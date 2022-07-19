@@ -1,7 +1,118 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
+	:root {
+		--background-color-1: #ffcf00;
+		--background-color-2: #3454d1;
+		--background-color-3: #232323;
+		--background-color-4: #0cce6b;
+		--background-color-5: #ff6663;
+		--background-color-6: #e0d3de;
+		--navigation-color: #aaa;
+		--navigation-hover-color: #d6d6d6;
+		--color-white: white;
+		--color-black: black;
+		--font-family-header: "Righteous", cursive;
+		--font-family-text: "Roboto", sans-serif;
+	}
+
+	/* ----- HERO SECTION ----- */
 	.hero-section {
 		display: grid;
-		grid-template-columns: 20% 1fr 1fr;
+		grid-template-columns: repeat(1fr);
+		min-width: 500px;
+		margin: 0 auto;
+		background-color: var(--background-color-6);
 	}
+
+	/* .weather-summary {
+		grid-column: 1/2;
+	} */
+
+	.weather-summary {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		font-size: 1.2rem;
+	}
+
+	.hero-decription {
+		display: grid;
+		grid-template-columns: 35% 65%;
+		padding: 1rem;
+	}
+
+	/* ----- END HERO SECTION ----- */
+
+	/* ------ FORECAST -------- */
+	.forecast {
+		display: block;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		font-size: 1.2rem;
+		font-family: var(--font-family-text);
+		/* flex-direction: column; */
+		/* align-items: center; */
+	}
+
+	.forecast-flex {
+		display: flex;
+		flex-flow: row wrap;
+		/* border: 1px solid var(--navigation-color); */
+		background: rgba(52, 84, 209, 0.2);
+		box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(7.5px);
+		-webkit-backdrop-filter: blur(7.5px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		overflow: hidden;
+	}
+
+	.forecast-box {
+		flex: 1 1 auto;
+		/* border-left: 1px solid var(--navigation-color); */
+	}
+
+	.forecast-box div:nth-child(1) {
+		border-left: none;
+	}
+
+	.forecast-box p:nth-child(1) {
+		background-color: var(--background-color-5);
+		color: var(--color-white);
+
+		margin: 0;
+		padding: 1rem;
+		/* border-bottom: 1px solid; */
+	}
+
+	.forecast-box p:nth-child(3) {
+		padding: 0 1rem;
+	}
+	/* ------ END FORECAST -------- */
+
+	/* ------- IMAGE GALLERY ------- */
+	.images-gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.honda-scoots:nth-child(odd) {
+		background-color: var(--color-white);
+	}
+	/* ------- END IMAGE GALLERY ------- */
+
+	/* ------- FOOTER CONTACT ------- */
+	.address {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.contact-map {
+		display: block;
+	}
+	/* ------- END FOOTER CONTACT ------- */
 }

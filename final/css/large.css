@@ -1,0 +1,70 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+	:root {
+		--background-color-1: #ffcf00;
+		--background-color-2: #3454d1;
+		--background-color-3: #232323;
+		--background-color-4: #0cce6b;
+		--background-color-5: #ff6663;
+		--background-color-6: #e0d3de;
+		--navigation-color: #aaa;
+		--navigation-hover-color: #d6d6d6;
+		--color-white: white;
+		--color-black: black;
+		--font-family-header: "Righteous", cursive;
+		--font-family-text: "Roboto", sans-serif;
+	}
+
+	/* ----- HERO SECTION ----- */
+	.hero-decription {
+		max-width: 960px;
+		margin: 0 auto;
+		padding-bottom: 0;
+		margin-bottom: -0.5rem;
+	}
+
+	.hero-image img {
+		width: 100%;
+		height: 75vh;
+	}
+
+	.hero-info {
+		padding: 0;
+	}
+
+	.hero-info h1 {
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	.hero-info h3 {
+		font-size: 2.2rem;
+		margin: 1.2rem;
+	}
+
+	.hero-info p {
+		font-size: 1.2rem;
+		padding: 1.5rem;
+		margin: 1rem;
+	}
+
+	.hero-info button {
+		font-size: 1.3rem;
+	}
+
+	.weather-data h5,
+	.weather-data h3 {
+		margin: 0.85rem;
+	}
+
+	.images-gallery {
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	/* ------- FOOTER CONTACT ------- */
+	.address {
+		flex-direction: row;
+	}
+}
