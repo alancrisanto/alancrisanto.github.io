@@ -87,7 +87,6 @@ const outputTowns = (towns) => {
 
 			if (index === 0) {
 				townImage.setAttribute("src", "assets/images/soda-spring.jpg");
-
 				townImage.setAttribute("alt", `${town.name} photo`);
 			} else if (index === 2) {
 				townImage.setAttribute("src", "assets/images/fish-haven.jpg");
