@@ -41,6 +41,9 @@
 
 		<!-- SCRIPTS -->
 		<script src="/final/js/index.js" defer></script>
+		<script src="/final/js/windchill.js" defer></script>
+		<script src="/final/js/updated.js" defer></script>
+		<script src="/final/js/weather.js" defer></script>
 		<title>GoScoots</title>
 	</head>
 	<body>
@@ -63,17 +66,17 @@
 		<main class="container">
 			<section class="hero-section">
 				<div class="weather-summary">
-					<div class="weather-data currently">
-						<h5>currently</h5>
-						<span class="icon">🌤️</span>
+					<div class="weather-data">
+						<h5 class="currently"></h5>
+						<img class="icon" src="" alt="" />
 					</div>
 					<div class="weather-data">
 						<h5>High</h5>
-						<h3><span class="temp">28</span>°F</h3>
+						<h3><span class="temp"></span>°F</h3>
 					</div>
-					<div class="weather-data humidity">
+					<div class="weather-data">
 						<h5>Humidity</h5>
-						<h3><span class="humidity">50</span>%</h3>
+						<h3><span class="humidity"></span>%</h3>
 					</div>
 					<div class="weather-data air-speed">
 						<h5>Air Speed</h5>
@@ -81,7 +84,7 @@
 					</div>
 					<div class="weather-data windchill-head">
 						<h5>Windchill</h5>
-						<h3><span class="windchill">16.9</span>°F</h3>
+						<h3><span class="windchill"></span>°F</h3>
 					</div>
 				</div>
 				<div class="hero-decription">
@@ -94,7 +97,7 @@
 						<p>
 							Vacation in Cozumel, and odds are that you'll go home utterly relaxed and with memories of spectacular
 							scenery and friendly people. A 34-mile-long by 11-mile-wide island off of Mexico's Riviera Maya, Cozumel
-							is quite unlike its neighbor. To make this experience unforgateable we have <strong> GoScoots</strong> to
+							is quite unlike its neighbor. To make your experience unforgateable we have <strong> GoScoots</strong> to
 							help you enjoy wonderfull momments around the island.
 						</p>
 						<a href="/final/reservations.html"><button>Booking Now</button></a>
@@ -107,30 +110,7 @@
 			<article class="forecast">
 				<h3>Five Day Forecast</h3>
 				<div class="forecast-flex">
-					<div class="forecast-box">
-						<p id="day1">Wed</p>
-						<p id="icon1">🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p id="day2">Thu</p>
-						<p id="icon2">🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p id="day3">Fri</p>
-						<p id="icon3">🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p id="day4">Sat</p>
-						<p id="icon4">🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p id="day5">Sun</p>
-						<p id="icon5">🌤️</p>
-					</div>
-					<div class="forecast-box">
-						<p id="day">Wed</p>
-						<p>🌤️</p>
-					</div>
+					<!-- CONTENT FILL WITH JS -->
 				</div>
 			</article>
 

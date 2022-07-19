@@ -209,8 +209,6 @@ const getForecast = async () => {
 
 			// CONVERTING THE STRING TO DATE OBJECT AND SET UTC TIME
 			const currentDate = new Date(currentDay).toUTCString();
-			// console.log(currentDate);
-			// console.log(currentDay);
 
 			// PASSING THE DATE AND THE TEMPERATURE
 			pDay.textContent = currentDate.slice(0, 3);

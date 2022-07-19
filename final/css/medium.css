@@ -15,6 +15,47 @@
 		--font-family-text: "Roboto", sans-serif;
 	}
 
+	/* ****** HEADER ****** */
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.header-tile h1 {
+		font-size: 2.5rem;
+		/* text-shadow: var(--dark-shadow); */
+	}
+
+	.header-tile h2 {
+		font-size: 1.3rem;
+		margin-top: 0.5rem;
+	}
+
+	.navigation a {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	.contact-info {
+		font-size: 1.2rem;
+	}
+
+	/* ****** END HEADER ****** */
+
 	/* ----- HERO SECTION ----- */
 	.hero-section {
 		display: grid;
@@ -48,7 +89,7 @@
 		display: block;
 		text-align: center;
 		width: 80%;
-		margin: 0 auto;
+		margin: 4.5rem auto;
 		font-size: 1.2rem;
 		font-family: var(--font-family-text);
 		/* flex-direction: column; */
@@ -73,6 +114,10 @@
 		/* border-left: 1px solid var(--navigation-color); */
 	}
 
+	.forecast-box P {
+		margin: 0.5rem;
+	}
+
 	.forecast-box div:nth-child(1) {
 		border-left: none;
 	}
@@ -80,15 +125,15 @@
 	.forecast-box p:nth-child(1) {
 		background-color: var(--background-color-5);
 		color: var(--color-white);
-
 		margin: 0;
 		padding: 1rem;
 		/* border-bottom: 1px solid; */
 	}
 
-	.forecast-box p:nth-child(3) {
+	/* .forecast-box p:nth-child(3) {
 		padding: 0 1rem;
-	}
+	} */
+
 	/* ------ END FORECAST -------- */
 
 	/* ------- IMAGE GALLERY ------- */
