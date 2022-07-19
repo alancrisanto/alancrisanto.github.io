@@ -7,7 +7,7 @@
 			"res_full": "$30",
 			"in_half": "$25",
 			"in_full": "$35",
-			"img": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-metro_wrfazv.png"
+			"photo": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-metro_wrfazv.png"
 		},
 		{
 			"name": "Honda Dio Scooter",
@@ -16,7 +16,7 @@
 			"res_full": "$40",
 			"in_half": "$35",
 			"in_full": "$45",
-			"img": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-dio_hogyuo.png"
+			"photo": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-dio_hogyuo.png"
 		},
 		{
 			"name": "Honda PCX150 Scooter",
@@ -25,7 +25,7 @@
 			"res_full": "$50",
 			"in_half": "$45",
 			"in_full": "$55",
-			"img": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-pcx_kv5wqv.png"
+			"photo": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-pcx_kv5wqv.png"
 		},
 		{
 			"name": "Honda Pioneer ATV",
@@ -34,7 +34,7 @@
 			"res_full": "$70",
 			"in_half": "$60",
 			"in_full": "$80",
-			"img": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-Pioneer_cmq3qr.png"
+			"photo": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/honda-Pioneer_cmq3qr.png"
 		},
 		{
 			"name": "Jeep Wrangler - 4 door with a/c",
@@ -43,7 +43,7 @@
 			"res_full": "$100",
 			"in_half": "$85",
 			"in_full": "$125",
-			"img": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/4door_hmqbti.png"
+			"photo": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/4door_hmqbti.png"
 		},
 		{
 			"name": "Jeep Wrangler - 2 door",
@@ -52,7 +52,7 @@
 			"res_full": "$85",
 			"in_half": "$70",
 			"in_full": "$90",
-			"img": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/2door_ybkbdf.png"
+			"photo": "https://res.cloudinary.com/deueg7n72/image/upload/v1658267737/GoScooter/2door_ybkbdf.png"
 		}
 	]
 }

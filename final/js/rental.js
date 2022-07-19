@@ -13,14 +13,10 @@ const getRental = async () => {
 
 		const scooterSpecif = document.querySelector(".scooters-specif");
 
-		// data.vehicles.map((vehicle) => {
-		// 	console.log(vehicle);
-		// });
-
 		const dataRental = data.vehicles.map(
 			(vehicle) => `<div class="card>
 		                  <div class="scooter-img">
-		                    <img src="/final/assets/images/honda-dio.png" alt="${vehicle.name}-img"/>
+		                    <img src="${vehicle.img}" alt="${vehicle.name}-img"/>
 		                  </div>
 		                  <div>
 		                    <div class="scooter-info">
