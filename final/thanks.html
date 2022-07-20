@@ -41,7 +41,6 @@
 
 		<!-- SCRIPTS -->
 		<script src="/final/js/index.js" defer></script>
-		<script src="/final/js/range.js" defer></script>
 		<title>GoScoots</title>
 	</head>
 	<body>
@@ -62,92 +61,7 @@
 			</ul>
 		</nav>
 		<main class="container">
-			<div class="form">
-				<form action="/final/thanks.html">
-					<fieldset>
-						<legend>User Information</legend>
-						<label class="top">
-							Full name
-							<input type="text" name="fname" placeholder="Full Name" required pattern="[A-Za-z\s]{5,}" />
-						</label>
-						<label class="top">Email <input type="email" name="email" placeholder="email@domain.com" /></label>
-						<label class="top">Phone Number <input type="tel" name="phone" placeholder="123456789" required /></label>
-						<label class="top">Country: *<input type="text" name="country" required pattern="[A-Za-z]{3,}" /></label>
-						<label class="top">
-							Zip Code
-							<input type="text" name="zcode" placeholder="07051" pattern="(\d{5}([\-]\d{4})?)" required />
-						</label>
-					</fieldset>
-
-					<fieldset>
-						<legend> Reservation Date </legend>
-
-						<label class="top">From<input type="date" name="date" /></label>
-						<label class="top">To<input type="date" name="date" /></label>
-						<label class="top">
-							Choose Vehicle
-							<input name="vehicle" list="vehicle" />
-							<datalist id="vehicle">
-								<option value="Honda Metro Scooter"></option>
-								<option value="Honda Dio Scooter"></option>
-								<option value="Honda PCX150 Scooter"></option>
-								<option value="Honda Pioneer ATV"></option>
-								<option value="Jeep Wrangler - 4 door with a/c"></option>
-								<option value="Jeep Wrangler - 2 door"></option>
-							</datalist>
-						</label>
-						<label class="rating">
-							Number of passengers:
-							<input
-								type="range"
-								id="rating"
-								value="1"
-								min="1"
-								max="5"
-								step="1"
-								list="tickmarks"
-								oninput="adjustRating(this.value)"
-								onchange="adjustRating(this.value)"
-							/>
-							<span id="rangeValue">1</span><br />
-						</label>
-						<datalist id="tickmarks">
-							<option value="0"> </option>
-							<option value="1"> </option>
-							<option value="2"> </option>
-							<option value="3"> </option>
-							<option value="4"> </option>
-							<option value="5"> </option>
-						</datalist>
-
-						<label class="top">
-							Store
-							<select>
-								<option value="" disabled selected>Please Select &#9662;</option>
-								<option value="preston">Playa del Carmen-Conzumel</option>
-								<option value="soda">Terminal Puerta Maya</option>
-							</select>
-						</label>
-					</fieldset>
-					<fieldset>
-						<legend>Services</legend>
-						<h3 class="danger-title">Rental Type</h3>
-						<label class="danger"><input type="radio" name="rental" /> Reservation</label>
-						<label class="danger"><input type="radio" name="rental" /> Walk Ins</label>
-						<h3 class="danger-title">Duration</h3>
-						<label class="danger"><input type="radio" name="danger" /> Half Day</label>
-						<label class="danger"><input type="radio" name="danger" /> Full Day</label>
-					</fieldset>
-					<fieldset>
-						<legend>Additional Information</legend>
-
-						<label class="top">
-							<textarea name="comments" cols="30" rows="10">Enter text here</textarea>
-						</label>
-					</fieldset>
-					<input class="submitBtn" type="submit" value="Send Information" />
-				</form>
-			</div>
+			<h1>You reservation has been confirmed</h1>
 		</main>
 		<footer>
 			<div class="contact-footer">
