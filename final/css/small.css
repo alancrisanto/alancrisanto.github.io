@@ -20,7 +20,7 @@ html {
 	--background-color-6: #e0d3de;
 	--box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
 	--navigation-color: #aaa;
-	--text-color: #969696;
+	--text-color: #8f8b8b;
 	--navigation-hover-color: #d6d6d6;
 	--color-white: white;
 	--color-black: black;
@@ -419,3 +419,60 @@ form label.top textarea:focus {
 }
 
 /* ********** END FROM STYLES ************ */
+
+/* ********** GALLERY TOUR STYLES ************ */
+
+/* -------- INFORMATION COZUMEL ------- */
+
+.tour-article {
+	text-align: center;
+	font-family: var(--font-family-text);
+	max-width: 960px;
+	margin: 1.5rem auto;
+	padding: 1.5rem;
+}
+
+.tour-article h1 {
+	color: var(--background-color-2);
+	font-family: var(--font-family-header);
+}
+
+.tour-article p {
+	color: var(--text-color);
+	text-align: justify;
+	margin: 0.5rem;
+}
+
+/* -------- END INFORMATION COZUMEL ------- */
+
+.gallery-container {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.gallery-photo {
+	margin: 1rem auto;
+	border: thin #c0c0c0 solid;
+	overflow: hidden;
+}
+
+.gallery-photo img {
+	max-width: 100%;
+	margin: 0 auto;
+	filter: blur(0);
+}
+
+.gallery-photo img[data-src] {
+	filter: blur(0.2em);
+}
+
+.gallery-description {
+	background-color: #eee;
+	padding: 0.7rem;
+	margin: -4px;
+	text-align: center;
+	font-weight: 600;
+}
+
+/* ********** END GALLERY TOUR STYLES ************ */

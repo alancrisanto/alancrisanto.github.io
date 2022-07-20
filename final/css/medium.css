@@ -215,4 +215,17 @@
 	/* ---------- FORM IMAGES -------- */
 
 	/* ---------- END FORM IMAGES -------- */
+
+	/* ---------- TOUR IMAGES GALLERY  -------- */
+	.gallery-photo {
+		margin: 0;
+	}
+
+	.gallery-container {
+		display: grid;
+		grid-template-columns: repeat(2, 250px);
+		gap: 1rem;
+		justify-content: center;
+	}
+	/* ---------- END TOUR IMAGES GALLERY  -------- */
 }

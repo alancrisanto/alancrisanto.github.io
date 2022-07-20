@@ -67,4 +67,23 @@
 	.address {
 		flex-direction: row;
 	}
+
+	/* ****** TOUR GALLERY  ***** */
+
+	.gallery-container {
+		grid-template-columns: repeat(3, 300px);
+		justify-content: center;
+	}
+
+	.gallery-photo {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+	}
+
+	.gallery-photo:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		transform: scale(0.9);
+		opacity: 0.8;
+	}
+	/* ****** END TOUR GALLERY ***** */
 }
