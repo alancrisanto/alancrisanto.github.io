@@ -60,7 +60,33 @@
 				<li><a href="/final/contact.html" class="nav-link active">Contact</a></li>
 			</ul>
 		</nav>
-		<main class="container"> </main>
+		<main class="container">
+			<div class="contact-form">
+				<h2>Contact Us</h2>
+				<form action="/final/thanks.html">
+					<fieldset>
+						<legend>Send Your comments</legend>
+						<label class="top">
+							<span class="label-title"> Full Name</span>
+							<input type="text" name="fullname" placeholder="John Doe" />
+						</label>
+						<label class="top">
+							<span class="label-title"> Email</span>
+							<input type="email" name="email" placeholder="myemail@domain.com" />
+						</label>
+						<label class="top">
+							<span class="label-title"> You Message</span>
+							<textarea name="comments" cols="30" rows="10">Enter text here</textarea>
+						</label>
+						<label class="danger">
+							<input type="checkbox" name="policies" required />
+							<p class="form-policies"> I agree to the <a href=""> GoScoots Privacy Policy</a></p>
+						</label>
+						<input class="contactBtn" type="submit" name="submit" value="Submit" />
+					</fieldset>
+				</form>
+			</div>
+		</main>
 		<footer>
 			<div class="contact-footer">
 				<h3>Contact Information</h3>
