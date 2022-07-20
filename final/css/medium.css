@@ -60,7 +60,7 @@
 	/* ----- HERO SECTION ----- */
 	.hero-section {
 		display: grid;
-		grid-template-columns: repeat(1fr);
+		grid-template-columns: 1fr;
 		min-width: 500px;
 		margin: 0 auto;
 		background-color: var(--background-color-6);
