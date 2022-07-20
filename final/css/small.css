@@ -18,7 +18,9 @@ html {
 	--background-color-4: #0cce6b;
 	--background-color-5: #ff6663;
 	--background-color-6: #e0d3de;
+	--box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
 	--navigation-color: #aaa;
+	--text-color: #969696;
 	--navigation-hover-color: #d6d6d6;
 	--color-white: white;
 	--color-black: black;
@@ -281,3 +283,52 @@ nav {
 	color: var(--background-color-5);
 }
 /* ------- END CONTACT INFORMATION --------*/
+
+/* -------- RENTALS CARDS -------- */
+.card {
+	border: 1px solid var(--background-color-6);
+	margin: 2rem 1rem;
+	text-align: center;
+	padding: 1.2rem;
+	box-shadow: var(--box-shadow);
+	border-radius: 10px;
+	font-family: var(--font-family-text);
+}
+
+.scoot-info button {
+	background-color: var(--background-color-4);
+	border-radius: 10px;
+	color: var(--color-white);
+	border: 1px solid var(--background-color-4);
+	padding: 0.5rem;
+	font-weight: 800;
+}
+
+.scoot-info button:hover {
+	background-color: var(--background-color-5);
+	border: 1px solid var(--background-color-5);
+	cursor: pointer;
+}
+
+.scoot-cost h3 {
+	color: var(--background-color-2);
+}
+
+.scoot-cost p {
+	color: var(--text-color);
+}
+
+/* ---- RENTAL INFORMATION -----------*/
+.conditions {
+	font-family: var(--font-family-text);
+	margin: 2rem auto;
+	padding: 1rem;
+	max-width: 960px;
+}
+
+.conditions h2 {
+	text-align: center;
+}
+/* ---- END RENTAL INFORMATION -----------*/
+
+/* -------- END RENTALS CARDS -------- */

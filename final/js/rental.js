@@ -7,24 +7,35 @@ const getRental = async () => {
 		const data = await response.json();
 		console.log(data.vehicles);
 
-		const divCard = document.createElement("div");
-		const divImg = document.createElement("div");
-		const divInfo = document.createElement("div");
-
 		const scooterSpecif = document.querySelector(".scooters-specif");
 
 		const dataRental = data.vehicles.map(
-			(vehicle) => `<div class="card>
-		                  <div class="scooter-img">
-		                    <img src="${vehicle.img}" alt="${vehicle.name}-img"/>
-		                  </div>
-		                  <div>
-		                    <div class="scooter-info">
-		                      <h2>${vehicle.name}</h2>
-		                    </div>
-		                    <div class="scooter-prices"></div>
-		                  </div>
-		                </div>`,
+			(vehicle) => `<div class="card">
+                      
+                        <img src="${vehicle.photo}" alt="${vehicle.name}-img" />
+     
+                      <div class="scoot-detail">
+                        <div class="scoot-title">
+                          <h2>${vehicle.name}</h2>
+                        </div>
+                        <div class="scoot-info">
+                          <p><i class="fa-solid fa-user"></i> Max Passengers ${vehicle.max_persons}</p>
+                          <a href="/final/reservations.html"><button>Reserve Now</button></a>
+                        </div>
+                        <div class="scoot-info-2">
+                          <div class="scoot-cost reservation">
+                          <h3>Reservations</h3>
+                            <p>Half Day (3hrs): ${vehicle.res_half}</p>
+                            <p>Full Day: ${vehicle.res_full}</p>
+                          </div>
+                          <div class="scoot-cost walk-in">
+                          <h3>Walk Ins</h3>
+                          <p>Half Day (3hrs): ${vehicle.in_half}</p>
+                          <p>Full Day: ${vehicle.in_full}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>`,
 		);
 
 		scooterSpecif.innerHTML = dataRental.join("");
