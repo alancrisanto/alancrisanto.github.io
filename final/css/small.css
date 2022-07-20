@@ -301,16 +301,17 @@ nav {
 	font-family: var(--font-family-text);
 }
 
-.scoot-info button {
+.scoot-info a {
 	background-color: var(--background-color-4);
 	border-radius: 10px;
 	color: var(--color-white);
 	border: 1px solid var(--background-color-4);
 	padding: 0.5rem;
 	font-weight: 800;
+	text-decoration: none;
 }
 
-.scoot-info button:hover {
+.scoot-info a:hover {
 	background-color: var(--background-color-5);
 	border: 1px solid var(--background-color-5);
 	cursor: pointer;

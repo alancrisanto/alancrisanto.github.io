@@ -13,14 +13,14 @@ const getRental = async () => {
 			(vehicle) => `<div class="card">
                       
                         <img src="${vehicle.photo}" alt="${vehicle.name}-img" />
-     
+
                       <div class="scoot-detail">
                         <div class="scoot-title">
                           <h2>${vehicle.name}</h2>
                         </div>
                         <div class="scoot-info">
                           <p><i class="fa-solid fa-user"></i> Max Passengers ${vehicle.max_persons}</p>
-                          <a href="/final/reservations.html"><button>Reserve Now</button></a>
+                          <a href="/final/reservations.html">Reserve Now</a>
                         </div>
                         <div class="scoot-info-2">
                           <div class="scoot-cost reservation">
