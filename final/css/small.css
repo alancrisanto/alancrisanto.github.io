@@ -504,3 +504,37 @@ form label.top textarea:focus {
 	text-align: center;
 }
 /* -------- END CONTACT FORM STYLES -------- */
+
+/* -------- CONFIRMATION PAGE ---------- */
+.confirmation-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: 1px solid var(--navigation-color);
+	margin: 2rem auto;
+	padding: 1.5rem;
+	box-shadow: var(--box-shadow);
+	font-family: var(--font-family-text);
+	max-width: 650px;
+}
+
+.confirmation-card h1 {
+	color: var(--background-color-2);
+}
+
+.confirmation-card button {
+	background-color: var(--background-color-4);
+	border: 1px solid var(--background-color-4);
+	padding: 0.5rem;
+	color: var(--color-white);
+	font-weight: 800;
+	border-radius: 10px;
+}
+
+.confirmation-card button:hover {
+	background-color: var(--background-color-5);
+	border: 1px solid var(--background-color-5);
+}
+
+/* -------- END CONFIRMATION PAGE ---------- */
