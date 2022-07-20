@@ -36,6 +36,10 @@ img {
 	max-width: 100%;
 }
 
+.active {
+	background-color: var(--background-color-5);
+}
+
 /* ------- HEADER LOGO -------- */
 .scoots-header {
 	background-color: var(--background-color-1);
